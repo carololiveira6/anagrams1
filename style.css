@@ -1,0 +1,99 @@
+body {
+    background-color: rgba(89, 89, 211, 0.486);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+div#result {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    margin: 0;
+    align-content: flex-start;
+}
+
+div#result p {
+    margin-left: 5px;
+}
+
+input#input {
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+button#findButton {
+    margin: 0 auto;
+    border-radius: 7px;
+    height: 47px;
+    font-size: 14px;
+    width: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    h1 {
+        font-size: 50px;
+    }
+
+    div {
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    input#input {
+        height: 30px;
+        margin: 0;
+    }
+
+    button#findButton {
+        font-size: 12px;
+        width: 135px;
+        height: 30px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 70px;
+    }
+
+    div {
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    input#input {
+        height: 40px;
+        margin: 0;
+        width: 400px;
+    }
+
+    button#findButton {
+        font-size: 18px;
+        width: 215px;
+        height: 47px;
+        margin: 0;
+    }
+}
